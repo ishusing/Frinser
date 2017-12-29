@@ -1,0 +1,198 @@
+<!--
+  Copyright (c) 2011 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+
+  To run this sample, replace YOUR API KEY with your application's API key.
+  It can be found at https://code.google.com/apis/console/?api=plus under API Access.
+  Activate the Google+ service at https://code.google.com/apis/console/ under Services
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+  </head>
+  <body>
+    <!--Add a button for the user to click to initiate auth sequence -->
+    <span id="gmail" style="
+	    margin-left: 102px;
+	    color: Brown;
+">GMail</span><br>
+    <button id="authorize-button" style="visibility: hidden; margin-left:21px;margin-top:10px;"><img style="
+    /* height: 20px; */
+    width: 170px;
+    height: 30px;
+" src="signIngmail.png"height="20px" width="40px"/></button>
+    <img id="dp" height="50px" width="50px" style="
+    height: 50px;
+    width: 60px;
+    margin-left: 90px;
+    margin-top:-40px;
+"/>
+<span id="name" style="
+    margin-left: 70px;
+"></span>
+     <a href="#" style="margin-left: 93px;" id="notyou" onclick="logout();"  >Not you</a>
+    <script>document.getElementById("notyou").style.visibility="hidden";
+    var authorized=false;
+    var notYouButton=document.getElementById("notyou");
+    function logout()
+    { document.getElementById('authorize-button').style.visibility = '';
+          document.getElementById('authorize-button').onclick = handleAuthClick;
+          notYouButton.style.visibility='hidden';
+          document.getElementById('dp').style.visibility='hidden';
+          document.getElementById('name').style.visibility='hidden';
+          document.getElementById('gmail').style.visibility='hidden';
+
+    	 window.location = "https://accounts.google.com/logout";
+    }
+    function changeLocation()
+    {
+    	window.location = "https://ishu.parseapp.com/g.html";
+    }</script>
+    <script type="text/javascript">
+      // Enter a client ID for a web application from the Google Developer Console.
+      // The provided clientId will only work if the sample is run directly from
+      // https://google-api-javascript-client.googlecode.com/hg/samples/authSample.html
+      // In your Developer Console project, add a JavaScript origin that corresponds to the domain
+      // where you will be running the script.
+//      var clientId = '837050751313';
+
+      // Enter the API key from the Google Develoepr Console - to handle any unauthenticated
+      // requests in the code.
+      // The provided key works for this sample only when run from
+      // https://google-api-javascript-client.googlecode.com/hg/samples/authSample.html
+      // To use in your own application, replace this API key with your own.
+	var clientId = '304115217610-qgnp9ccdk2lrdeagealb7ppetap5sss5.apps.googleusercontent.com';
+	var apiKey = 'AIzaSyAJ04QJoR6241TceHKYRC8tJ73XgCr7b7k';
+	var authResult;
+
+      // To enter one or more authentication scopes, refer to the documentation for the API.
+	  var scopes = 'https://www.google.com/m8/feeds https://www.googleapis.com/auth/plus.login';
+
+      // Use a button to handle authentication the first time.
+      function handleClientLoad() {
+        gapi.client.setApiKey(apiKey);
+        window.setTimeout(checkAuth,1);
+      }
+
+      function checkAuth() {
+        gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
+      }
+
+
+      function handleAuthResult(authResult) {
+        var authorizeButton = document.getElementById('authorize-button');
+        if (authResult && !authResult.error) {
+          authorizeButton.style.visibility = 'hidden';
+
+			notYouButton.style.visibility='';
+			authorized=true;
+			localStorage.setItem("gmail-authorized", "true");
+          makeApiCall();
+
+        } else {
+        localStorage.setItem("gmail-authorized", "false");
+          authorizeButton.style.visibility = '';
+          document.getElementById('dp').style.visibility='hidden';
+           document.getElementById('gmail').style.visibility='hidden';
+          authorizeButton.onclick = handleAuthClick;
+          setReload();
+        }
+      }
+
+      function handleAuthClick(event) {
+
+        gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
+//setReload();
+        return false;
+      }
+
+      function setReload()
+      {
+     // setTimeout(function(){  location.reload();
+
+
+      //  }, 5000);
+      }
+
+	  function objectSize(the_object) {
+	  /* function to validate the existence of each key in the object to get the number of valid keys. */
+	  var object_size = 0;
+	  for (key in the_object){
+		if (the_object.hasOwnProperty(key)) {
+		  object_size++;
+		}
+	  }
+	  return object_size;
+	}
+
+      // Load the API and make an API call.  Display the results on the screen.
+      function makeApiCall() {
+
+		    var authParams = gapi.auth.getToken() // from Google oAuth
+var name='';
+
+var output='';
+			 authParams.alt = 'json';
+
+			$.ajax({
+			  url: 'https://www.google.com/m8/feeds/contacts/default/full',
+			  dataType: 'jsonp',
+			  data: authParams,
+			  success: function(data) { console.log(data);
+
+				name=(data.feed.author[0].email.$t);
+				   output='[';
+				   var flag=0;
+				   for(var emailloop=0; emailloop < data.feed.entry.length; emailloop++) {
+					   for (var idloop=0; idloop < objectSize(data.feed.entry[emailloop]['gd$email']) /* Object.keys(data.feed.entry[emailloop]['gd$email']).length */; idloop++) {
+
+							if(flag==0)
+							{output = output+ '\"'+(data.feed.entry[emailloop]['gd$email'][idloop]['address'] )+'\"';
+							flag=1;}
+							else
+							{output = output+ ','+ '\"'+(data.feed.entry[emailloop]['gd$email'][idloop]['address'] )+'\"';
+							}
+						}
+
+				   }
+				   output=output+']'
+				   output='\"friends\":'+output;
+			// alert("HERE: " +output );
+			//console.log("PRINTING OUTPUT HERE" + output);
+window.parent.postMessage( 'gapi-frnds^'+output , '*');
+window.parent.postMessage( 'gapi-name'+name , '*');
+getDP(authParams);
+
+			  }
+			});
+			function getDP(authParams)
+			{
+			var token=(authParams.access_token);
+			 $.get("https://www.googleapis.com/oauth2/v1/userinfo?access_token="+token,
+			 function(data,status){
+			     console.log(data.name);
+			     document.getElementById("dp").src=data.picture;
+			      document.getElementById("name").innerHTML=data.name;
+  });
+			}
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+    <div id="content"></div>
+
+     </body>
+</html>

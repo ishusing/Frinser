@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<style>
+html, body {
+    height:99%;
+}
+#container {
+    
+    color:white;
+    text-align:center;
+    height:16%;
+}
+#left {
+    background-color:#3c5a98;
+    color:white;
+    text-align:center;
+    height:100%;
+}
+#center {
+    background-color:#DD4D3B;
+    color:white;
+    text-align:center;
+    height:100%;
+}
+#right {
+    background-color:#55ACEE;
+    color:white;
+    text-align:center;
+    height:100%;
+}
+#content {
+    background-color:#E6E6E6;
+    color:white;
+    text-align:center;
+    height:77%;
+}
+#header {
+    background-color:#E6E6E6;
+    color:white;
+    text-align:center;
+    height:7%;
+}
+
+</style>
+<script type="text/javascript">
+
+var win = window.open("","_self"); /* url = "" or "about:blank"; target="_self" */
+
+win.close();</script>
+</head>
+<body>
+	 <script>
+	 window.top.close();
+	 </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+package homeAuto;
+
+import org.codehaus.jettison.json.JSONException;
+
+
+public class GCMTest 
+{
+    public static void main( String[] args ) throws JSONException
+    {
+        System.out.println( "Sending POST to GCM" );
+
+        String apiKey = "AIzaSyBTkPMFyo_pLtmVvPfBrLQC336Vz1wDR98";
+        Content content = createContent();
+
+        POST2GCM.post(apiKey, content,"on");
+    }
+
+    public static Content createContent(){
+
+        Content c = new Content();
+
+        c.addRegId("APA91bEbdjQUlPppG78IqK62n09vXVuPc-ydMw_Ek97UL7ZzEqY7MbUEHMwOcFn31Xrb8s9pBMf_v2T6ddQzf7a_QYWqlrBN3IJvcEEIRbtI1UIPEsXjLGlrBZ-hac59ILXiTEazZ_3g");
+        c.createData("Test Title", "Test Message");
+
+        return c;
+    }
+}

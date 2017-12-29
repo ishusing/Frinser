@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<style>
+html, body {
+    height:99%;
+}
+#container {
+    
+    color:white;
+    text-align:center;
+    height:16%;
+}
+#left {
+    background-color:#3c5a98;
+    color:white;
+    text-align:center;
+    height:100%;
+}
+#center {
+    background-color:#DD4D3B;
+    color:white;
+    text-align:center;
+    height:100%;
+}
+#right {
+    background-color:#55ACEE;
+    color:white;
+    text-align:center;
+    height:100%;
+}
+#content {
+    background-color:#E6E6E6;
+    color:white;
+    text-align:center;
+    height:77%;
+}
+#header {
+    background-color:#E6E6E6;
+    color:white;
+    text-align:center;
+    height:7%;
+}
+
+</style>
+</head>
+<body>
+	<div id="header"  style="width: 100%; text-align: center; vertical-align: middle;">
+		<span id="frinser" style="color: #fff; font-size: 22px">
+			<b>
+				Welcome to Frinser!	
+			</b>
+		</span>
+	</div>
+	<div id="container" style="width: 100%;">
+		<div id="left" style="float: left; width: 33%;">
+			<iframe src="https://softctrl.in/public/fbButton.html" align="middle"
+				style=" border: none;"></iframe>
+		</div>
+		<div id="center" style="float: left; width: 34%;">
+			<iframe src="https://softctrl.in/public/gapi__.html" align="middle"
+				style="width: 100%; height: 100%; border: none;"></iframe>
+		</div>
+		<div id="right" style="float: left; width: 33%;">
+			<iframe src="https://softctrl.in/twitteroauth-master/indexButton.php"
+				align="middle" style=" border: none;"></iframe>
+		</div>
+		<br style="clear: left;" />
+	</div>
+	<div id="content">
+		<b>
+			This is what we do!
+		</b>
+	</div>
+</body>
+</html>

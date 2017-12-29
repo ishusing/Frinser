@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Your Website Title</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+	<meta property="og:url"           content="http://www.frinser.com/web" />
+	<meta property="og:type"          content="Product" />
+	<meta property="og:title"         content="Frinser" />
+	<meta property="og:description"   content="Frinser is a Chrome extension which helps you compare google results by leveraging similar searches from other people and your social media connections." />
+	<meta property="og:image"         content="http://www.frinser.com/agency_business-pack/business-pack/web/images/logos/frinser_full.png" />
+</head>
+<body>
+
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=818496498172166";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- Your share button code -->
+	<div class="fb-share-button" 
+		data-href="http://www.frinser.com/web" 
+		data-layout="button">
+	</div>
+	<a href="https://twitter.com/FrinserApp" class="twitter-follow-button" data-show-count="false">Follow @FrinserApp</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</body>
+</html>

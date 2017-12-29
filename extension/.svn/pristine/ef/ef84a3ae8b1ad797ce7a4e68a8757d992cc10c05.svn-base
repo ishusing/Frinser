@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facebook Login JavaScript Example</title>
+<meta charset="UTF-8">
+
+
+</head>
+<body>
+	 
+<span style="
+    margin-left: 90px;
+    color: darkblue;
+">Facebook</span><br>
+<img style="margin-left: 95px;" id ="dp"/><br>
+<span id="name" style="
+    margin-left: 66px;
+"></span><br>
+<a href="#" style="margin-left: 92px;" id="notyou" onclick="logout();">Not you</a>
+</body>
+<script>document.getElementById("notyou").style.visibility="hidden";</script>
+</html>

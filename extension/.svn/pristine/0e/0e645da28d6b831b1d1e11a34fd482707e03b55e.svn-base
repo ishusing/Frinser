@@ -1,0 +1,528 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Business Bootstarp Website Template | Home :: w3layouts</title>
+<!-- <link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' /> -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="web/js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="web/css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="js/jquery-bootstrap-modal-steps.js"></script>
+<script src="js/signup.js"></script>
+
+
+<!----webfonts---->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700,800' rel='stylesheet' type='text/css'>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="web/js/move-top.js"></script>
+<script type="text/javascript" src="web/js/easing.js"></script>
+<!---- start-smoth-scrolling---->
+</head>
+<body>
+
+<!--<div class="header">
+	  <div class="container">
+	  	<div class="header_top">
+		<ul class="header_box">
+			<li class="mobile_left"><i class="mobile"> </i><span>1-200-346-2986</span></li>
+			<li class="message"><a href="#"><i class="msg"> </i><span>info(at)business.com</span></a></li>
+			<div class="clearfix"> </div>
+		</ul>
+		<ul class="facebook">
+		   <li class="fb"><a href="#"><span> </span></a></li>
+		</ul>
+		<div class="clearfix"> </div>
+	  </div>
+	  </div>
+	</div> -->
+	<div class="header_bottom">
+	  <div class="container">
+	  	<div class="logo">
+	  	   <a href="index.html"><img src="web/images/logo.png" alt=""/></a>
+	  	</div>
+	  	<div class="consul_btn1"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal </button></div>
+	  	  <div class="menu">
+	  	    <div class="h_menu4"><!-- start h_menu4 -->
+				<a class="toggleMenu" href="#">Menu</a><div class="nav_icon"><img src="web/images/nav_icon.png" alt=""/></div>
+				<ul class="nav">
+					<li class="active"><a href="#home" class="scroll">Home</a></li>
+					<li><a href="#about" class="scroll">How it works</a>
+						<ul>
+							
+						</ul>
+					</li>
+					<li><a href="#app" class="scroll">User Stories</a>
+						<ul>
+							
+						</ul>
+					</li>
+					<li><a href="#work" class="scroll">Testimonials</a></li>
+				</ul>
+				<script type="text/javascript" src="web/js/nav.js"></script>
+			</div><!-- end h_menu4 -->
+			<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		    </script>
+			<div class="consul_btn"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Connect Accounts</button></div>
+            <div class="clearfix"> </div>
+	  </div>
+	  </div>
+	</div>
+	<div id="frinser_container" style="width: 100%;">
+				<div id="frinser_left" style="float: left; width: 33%;">
+					<iframe src="https://softctrl.in/public/fbButton__.html" align="middle"
+						style="width: 100%; height: 100%; border: none;"></iframe>
+				</div>
+				<div id="frinser_center" style="float: left; width: 34%;">
+					<iframe src="https://softctrl.in/public/gapi__.html" align="middle"
+						style="width: 100%; height: 100%; border: none;" id="frinser_gapi_iframe"></iframe>
+				</div>
+				<div id="frinser_right" style="float: left; width: 33%;">
+					<iframe src="https://softctrl.in/twitteroauth-master/indexButton__.php"
+						align="middle" style="width: 100%; height: 100%; border: none;"></iframe>
+				</div>
+				<br style="clear: left;" />
+			</div>
+	<div class="slider" id="home">
+  	 <div class="slider_container">
+  		<div class="wmuSlider example1">
+			   <div class="wmuSliderWrapper">
+				   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	 <div class="banner-wrap">
+				   		 <div class="slider-left">
+						    <h1>Frinser</h1>
+							<p class="top">Empower your search</p>
+						    <ul class="button">
+						       <li><a href="#">Download Extension</a></li>
+							</ul>
+						 </div>
+					 </div>
+					</article>
+				   <article style="position: relative; width: 100%; opacity: 1;"> 
+				   	 <div class="banner-wrap">
+				   		 <div class="slider-left">
+						    <h1>Frinser</h1>
+							<p class="top">Unleash the power of connections</p>
+						    <ul class="button">
+						       <li><a href="#">Download Extension</a></li>
+							</ul>
+						 </div>
+					   </div>
+				   </article>
+				</div>
+              </div>
+            	 <script src="web/js/jquery.wmuSlider.js"></script> 
+				       <script>
+       						 $('.example1').wmuSlider();         
+   						</script> 	           	      
+           </div>
+       </div>
+       <div class="main">
+       <div id="about" class="about">
+       		<div class="container">
+       		   <div class="gallery-head text-center">
+				  <h3>How it works</h3>
+				  <!-- <p>We are added our major Services</p> 
+				  <span> </span> -->
+			    </div>
+       			<div class="row text-center">
+				    <div class="col-md-3 about_grid">
+						<img src = "./web/images/howitworks1.jpeg" height="200" width="200">
+       					<!-- <i class="icon1"> </i> -->
+       					<h3><a href="#">Open Google Search</a></h3>
+       					<p>in Chrome browser</p>
+       				</div>
+
+       				<div class="col-md-3 about_grid">
+       					<i class="icon1"> </i>
+       					<h3><a href="#">Login</a></h3>
+       					<p>into Facebook/Gmail/Twitter</p>
+       				</div>
+       				<div class="col-md-3 about_grid">
+       					<i class="icon2"> </i>
+       					<h3><a href="#">Search something</a></h3>
+       					<p>and it's working :-)</p>
+       				</div>
+       				<div class="col-md-3 about_grid">
+       					<i class="icon3"> </i>
+       					<h3><a href="#">Liked it?</a></h3>
+       					<p>If you did, Click on "Like"! at the bottom of your webpage<br>We help you, you help us! :-)</p>
+       				</div>
+       			</div>
+       		</div>
+       	</div>
+       	<div class="approach" id="app">
+       		<div class="container">
+       			 <div class="gallery-head text-center">
+				  <h3>How will FRINSER help you?</h3>
+				  <p>Check out these scenarios</p>
+				  <span> </span>
+			    </div>
+			    <ul class="list1">
+			    	<li class="list1_img"><img src="web/images/pic1.jpg" class="img-responsive" alt=""/></li>
+			    	<li class="list1_desc"><h3><a href="#">Weekend Getaways</a></h3>
+			    		<p>You're searching for weekend getaway blogs where people have shared their experiences and you can see in the search results that how many people actually liked that blog after reading it.</p>
+			    	</li>
+			    	<p class="no"><span>Weekend <br>Getaway</span><br></p>
+			    	<div class="clearfix"> </div>
+			    </ul>
+			    <ul class="list2">
+			    	<li class="list1_desc"><h3><a href="#">Resume Templates</a></h3>
+			    		<p>Tired of searching resume templates which have thousands of results? Trust your friends reviews that show up on your search page!</p>
+			    	</li>
+			    	<li class="list1_img"><img src="web/images/pic2.jpg" class="img-responsive" alt=""/></li>
+			    	<p class="no">2<br><span>Step</span></p>
+			    	<div class="clearfix"> </div>
+			    </ul>
+			    <ul class="list1">
+			    	<li class="list1_img"><img src="web/images/pic3.jpg" class="img-responsive" alt=""/></li>
+			    	<li class="list1_desc"><h3><a href="#">Need Programming help?</a></h3>
+			    		<p>You got stuck while programming and your google search reveals multiple ways to solve it but you don't know which one is best. Trust your friends (GEEKS) recommendation!</p>
+			    	</li>
+			    	<p class="no">3<br><span>Step</span></p>
+			    	<div class="clearfix"> </div>
+			    </ul>
+			     <ul class="list2">
+			    	<li class="list1_desc"><h3><a href="#">Broke up?</a></h3>
+			    		<p>Just broke up and looking for tips to get over her? Trust your friends recommendation, well because they were in the same boat too!</p>
+			    	</li>
+			    	<li class="list1_img"><img src="web/images/pic4.jpg" class="img-responsive" alt=""/></li>
+			    	<p class="no">4<br><span>Step</span></p>
+			    	<div class="clearfix"> </div>
+			    </ul>
+			    <ul class="list1">
+			    	<li class="list1_img"><img src="web/images/pic3.jpg" class="img-responsive" alt=""/></li>
+			    	<li class="list1_desc"><h3><a href="#">Party ideas?</a></h3>
+			    		<p>Gotta organize a party and looking for kickass ideas? How cool would it be if you could stumble upon something epic that made people famous in their offices? (Ofcourse our number of likes would help you out now, wouldn't it?)</p>
+			    	</li>
+			    	<p class="no">5<br><span>Step</span></p>
+			    	<div class="clearfix"> </div>
+			    </ul>
+			     <ul class="list2">
+			    	<li class="list1_desc"><h3><a href="#">Loved one sick?</a></h3>
+			    		<p>Someone close got sick and you're worried? You'll end up finding a million articles on how to get better soon, but wouldn't it help to know that your friends (and the world) backed one particular idea? You're welcome!</p>
+			    	</li>
+			    	<li class="list1_img"><img src="web/images/pic4.jpg" class="img-responsive" alt=""/></li>
+			    	<p class="no">6<br><span>Step</span></p>
+			    	<div class="clearfix"> </div>
+			    </ul>	
+       		</div>
+       	</div>
+        <div class="work" id="work">
+       		<div class="container" style="width:800px;">
+       			<div class="work_top text-center">
+				  <h3>Testimonials</h3>
+				  <p>What people say about us?</p>
+				  <span> </span>
+			    </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+ 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" >
+						<div class="item active">
+							<div>
+								<img src="web/images/pic3.jpg" alt="Chania" width="150"
+									height="150" style="float: right;">
+								<div style=" padding-left: 10px;">
+									<p style="font-size: 23px; padding-right: 10px;color: white;">dslkfbdshfbjsdb
+										fdhbs kjfn fnd k tk htkjkj nkj k kttklyyk k lk nl lnk l dlklkl
+										klel l klke l eob hg gggmg v jgjg gj gh g h </p>
+								</div>
+								<div style="margin-left: 10px; font-size: 14px; color: azure;"><strong>-Ishupreet Singh (CEO @ Chak de Fatte)</strong></div>
+							</div>
+						</div>
+						<div class="item">
+							<div>
+								<img src="web/images/pic3.jpg" alt="Chania" width="150"
+									height="150" style="float: right;">
+								<div style=" padding-left: 10px;">
+									<p style="font-size: 23px; padding-right: 10px;color: white;">dslkfbdshfbjsdb
+										fdhbs kjfn fnd k tk htkjkj nkj k kttklyyk k lk nl lnk l dlklkl
+										klel l klke l eob hg gggmg v jgjg gj gh g h </p>
+								</div>
+								<div style="margin-left: 10px; font-size: 14px; color: azure;">Ishupreet Singh</div>
+							</div>
+						</div>
+						<div class="item">
+							<div>
+								<img src="web/images/pic3.jpg" alt="Chania" width="150"
+									height="150" style="float: right;">
+								<div style=" padding-left: 10px;">
+									<p style="font-size: 23px; padding-right: 10px;color: white;">dslkfbdshfbjsdb
+										fdhbs kjfn fnd k tk htkjkj nkj k kttklyyk k lk nl lnk l dlklkl
+										klel l klke l eob hg gggmg v jgjg gj gh g h </p>
+								</div>
+								<div style="margin-left: 10px; font-size: 14px; color: azure;">Ishupreet Singh</div>
+							</div>
+						</div>
+						<div class="item">
+							<div>
+								<img src="web/images/pic3.jpg" alt="Chania" width="150"
+									height="150" style="float: right;">
+								<div style=" padding-left: 10px;">
+									<p style="font-size: 23px; padding-right: 10px;color: white;">dslkfbdshfbjsdb
+										fdhbs kjfn fnd k tk htkjkj nkj k kttklyyk k lk nl lnk l dlklkl
+										klel l klke l eob hg gggmg v jgjg gj gh g h </p>
+								</div>
+								<div style="margin-left: 10px; font-size: 14px; color: azure;">Ishupreet Singh</div>
+							</div>
+						</div>
+      
+    </div>
+
+    <!-- Left and right controls -->
+<!--     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> -->
+<!--       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+<!--       <span class="sr-only">Previous</span> -->
+<!--     </a> -->
+<!--     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> -->
+<!--       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+<!--       <span class="sr-only">Next</span> -->
+<!--     </a> -->
+  </div>
+<!--     	    <div class="col_1_of_4 span_1_of_4">
+			     <div class="port-grid">
+					<div class="port-grid-pic block last">
+					  <a href="#" class="b-link-stripe b-animate-go  thickbox">
+					  <img src="web/images/w3.jpg" class="img-responsive" style="top: 0px;"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="web/images/plus.png" alt="" style="top: 0px;"></h2>
+					   </div></a>
+					</div>
+					<div class="port-grid-text">
+					  <img src="web/images/arrow_icon.png" alt=""/>
+					  <h3></h3>
+					  <p>Facebook Marketing</p>
+					</div>
+					<div class="clearfix"> </div>
+				 </div>
+			    </div>
+			    <div class="col_1_of_4 span_1_of_4">
+			     <div class="port-grid">
+					<div class="port-grid-pic block last">
+					  <a href="#" class="b-link-stripe b-animate-go  thickbox">
+					  <img src="web/images/w4.jpg" class="img-responsive" style="top: 0px;"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="web/images/plus.png" alt="" style="top: 0px;"></h2>
+					   </div></a>
+					</div>
+					<div class="port-grid-text">
+					  <img src="web/images/arrow_icon.png" alt=""/>
+					  <h3>Project Name</h3>
+					  <p>Landing Page</p>
+					</div>
+					<div class="clearfix"> </div>
+				 </div> -->
+			   </div>
+		   </div>
+       	</div>
+<!--   	<div class="contact">
+       		<div class="container">
+       			<div class="work_top text-center">
+				  <h3>Get Your Facebook Ananlysis Now</h3>
+				  <p>Enter your details below</p>
+				  <span> </span>
+			    </div>
+			     <div class="contact-form_grid">
+   					<p>diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+				   <form method="post" action="contact-post.html">
+					 <input type="text" class="textbox" value="Your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your name';}">
+					 <input type="text" class="textbox" value="Contact Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Contact Number';}">
+					 <input type="text" class="textbox" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}">
+					 <input type="submit" value="Submit Now">
+				   </form>
+			      </div>
+   			  </div>
+       	</div>
+       </div>
+	   -->
+       <div class="footer_top">
+       	<div class="container">
+		    <h3>Connect with us on</h3>
+       		<div class="social">
+			   <ul>
+				 <li><a href=""> <i class="facebook"> </i> </a></li>
+				 <li><a href=""><i class="twitter"> </i> </a></li>
+				 <li><a href=""><i class="google"> </i> </a></li>
+				 <li><a href=""><i class="linkedin"> </i> </a></li>
+				 <div class="clear"> </div>
+			  </ul>
+			</div>
+			<br><br>
+       		<h3>Give us feedback</h3>
+			<!-- <p>Subscribe to our newsletter to stay update with what is new</p> -->
+			<div class="footer_form">
+   			   <form method="post" action="contact-post.html">
+				  <input type="text" class="textbox" value="Feedback" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Feedback';}">
+				  <input type="submit" value="Submit Feedback">
+			   </form>
+			</div>
+       	</div>
+       </div>
+       <div class="footer-bottom">
+   	<div class="container">
+   		<div class="copy">
+		    <p>&copy; 2014 Template by <a href="http://w3layouts.com" target="_blank"> w3layouts</a></p>
+		</div>
+   	</div>
+   </div>
+   <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+	<style>
+		#frinser_container {
+			color: white;
+			text-align: center;
+			/**margin-top: 50px;*/
+			height: 90px;
+		}
+		
+		#frinser_left {
+			background-color: #3c5a98;
+			color: white;
+			text-align: center;
+			height: 100%;
+		}
+		
+		#frinser_center {
+			background-color: #DD4D3B;
+			color: white;
+			text-align: center;
+			height: 100%;
+		}
+		
+		#frinser_right {
+			background-color: #55ACEE;
+			color: white;
+			text-align: center;
+			height: 100%;
+		}
+		
+		#frinser_content {
+			background-color: #E6E6E6;
+			color: white;
+			text-align: center;
+			height: 77%;
+		}
+		
+		#frinser_header {
+			background-color: #E6E6E6;
+			color: white;
+			text-align: center;
+			height: 7%;
+		}
+	</style>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" style="width: 441px;">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h4 class="js-title-step"></h4>
+      </div>
+      <div class="modal-body">
+        <div class="row hide" data-step="1" data-title="Connect Facebook:" style="
+    background-color: #3c5a98;
+    height: 87.4px;
+    width: 441px;
+">
+          <div ><iframe src="https://softctrl.in/public/fbButton__.html" align="middle" style="width: 100%; height: 81px; border: none;"></iframe></div>
+        </div>
+        <div class="row hide" data-step="2" data-title="Connect Google:" style="
+    background-color: #DD4D3B;
+    height: 87.4px;
+    width: 441px;
+">
+    <div ><iframe src="https://softctrl.in/public/gapi__.html" align="middle" style="width: 100%; height: 86px; border: none;"></iframe></div>
+        </div>
+  <div class="row hide" data-step="3" data-title="Connect Twitter:" style="
+    background-color: #55ACEE;
+    height: 87.4px;
+    width: 440px;
+">
+    <div ><iframe src="https://softctrl.in/twitteroauth-master/indexButton__.php" align="middle" style="width: 100%; height: 81px; border: none;"></iframe></div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+      	<div id="status"></div>
+        <button type="button" class="btn btn-warning js-btn-step" data-orientation="previous"></button>
+        <button type="button" class="btn btn-success js-btn-step" data-orientation="next"></button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$('#myModal').modalSteps();
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	  $('.bxslider').bxSlider();
+	});
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
+

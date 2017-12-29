@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body style="
+    align-self: center;
+    background-image: url('http://blogs.absolute.com/lojack-for-laptops/files/2013/02/133685270.jpg');
+">
+<center> 
+<iframe src="https://www.frinser.com:8888/public/fbButton.html" align="middle" style=" height: 143px;  width: 262px;"></iframe>
+<iframe src="https://www.frinser.com:8888/public/gapi.html" align="middle" style=" height: 143px;  width: 262px;"></iframe>
+<iframe src="https://www.frinser.com:8888/twitteroauth-master/indexButton.php" align="middle" style=" height: 143px;  width: 262px;"></iframe>
+</center>
+</body>
+</html>
